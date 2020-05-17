@@ -1,2 +1,31 @@
-/* Custom bootstrap variables must be set or imported *before* bootstrap. */
 @import "bootstrap";
+
+$gray: rgb(128, 128, 128);
+$gray-light: rgb(85, 85, 85);
+$gray-medium-light: rgb(51, 51, 51);
+$gray-darker: rgb(0, 0, 0);
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: $gray;
+    /*It means: that a:hover */
+    &:hover{
+      color: $gray-darker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
